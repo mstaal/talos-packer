@@ -4,7 +4,7 @@ packer {
   required_plugins {
     hcloud = {
       version = ">= 1.0.0"
-      source  = "github.com/hashicorp/hcloud"
+      source  = "github.com/hetznercloud/hcloud"
     }
   }
 }
@@ -35,7 +35,7 @@ variable "base_image" {
 }
 
 locals {
-  image = "https://github.com/siderolabs/talos/releases/download/${var.talos_version}/${var.talos_asset}.raw.xz"
+  image = "https://factory.talos.dev/image/376567988ad370138ad8b2698212367b8edcb69b5fd68c80be1f2ec7d603b4ba/${var.talos_version}/${var.talos_asset}.raw.xz"
 }
 
 source "hcloud" "talos" {
