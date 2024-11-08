@@ -21,7 +21,7 @@ variable "server_type" {
 
 variable "talos_version" {
   type    = string
-  default = "v1.7.5"
+  default = "v1.8.2"
 }
 
 variable "talos_asset" {
